@@ -88,7 +88,7 @@ const Navigation = () => {
                 <>
                   <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[200px] gap-1">
+                    <ul className="grid w-52 gap-1">
                       {item.dropdown.map((cat: any, i: number) => (
                         <li key={cat.term_id || i}>
                           <NavigationMenuLink asChild>
