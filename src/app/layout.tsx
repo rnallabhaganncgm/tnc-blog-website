@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import ClientOnly from "@/components/client-only";
 import { ReactQueryProvider } from "@/components/react-query-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -26,8 +27,15 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <ClientOnly>
           <ReactQueryProvider>
-            <Header />
-            {children}
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="light"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Header />
+              {children}
+            </ThemeProvider>
           </ReactQueryProvider>
         </ClientOnly>
       </body>
