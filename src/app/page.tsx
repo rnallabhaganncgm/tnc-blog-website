@@ -1,9 +1,8 @@
-import React from 'react'
+import HomeView from "@/views/home-view";
+import React from "react";
 
 const HomePage = () => {
-  return (
-    <div className='font-extrabold'>HomePage</div>
-  )
-}
+  return <HomeView />;
+};
 
-export default HomePage
+export default HomePage;
