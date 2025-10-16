@@ -13,7 +13,8 @@ export async function GET() {
     }
 
     const [users] = await db.query<RowDataPacket[]>(
-      "SELECT * FROM wpkj_actionscheduler_groups"
+      // "SELECT * FROM wpkj_posts WHERE post_title LIKE '%altcoin%' ORDER BY ID DESC"
+      "SELECT * FROM wpkj_posts WHERE id='148562'"
     );
     return NextResponse.json(users);
   } catch (error) {
