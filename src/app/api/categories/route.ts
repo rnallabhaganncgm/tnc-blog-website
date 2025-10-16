@@ -12,10 +12,16 @@ export async function GET() {
       );
     }
 
-    const [users] = await db.query<RowDataPacket[]>(
-      "SELECT * FROM wpkj_actionscheduler_groups"
-    );
-    return NextResponse.json(users);
+    const term_ids = [
+      143, 142, 1644, 146, 1643, 144, 2200, 2412, 816, 908, 403, 1500, 147,
+      1874, 4601, 817,
+    ];
+    const placeholders = term_ids.map(() => "?").join(",");
+    const query = `SELECT * FROM wpkj_terms WHERE term_id IN (${placeholders})`;
+
+    const [categories] = await db.query<RowDataPacket[]>(query, term_ids);
+
+    return NextResponse.json(categories);
   } catch (error) {
     console.error(error);
     return NextResponse.json(
