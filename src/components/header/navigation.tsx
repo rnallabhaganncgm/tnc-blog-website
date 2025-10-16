@@ -86,8 +86,10 @@ const Navigation = () => {
             <NavigationMenuItem key={index}>
               {item.dropdown && item.dropdown.length > 0 ? (
                 <>
-                  <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
-                  <NavigationMenuContent>
+                  <NavigationMenuTrigger className="hover:cursor-pointer">
+                    {item.title}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="bg-white shadow-lg z-10 relative">
                     <ul className="grid w-52 gap-1">
                       {item.dropdown.map((cat: any, i: number) => (
                         <li key={cat.term_id || i}>

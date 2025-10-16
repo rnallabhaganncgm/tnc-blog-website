@@ -3,10 +3,11 @@ import { Button } from "../ui/button";
 import { Search } from "lucide-react";
 import SideMenu from "./side-menu";
 import Image from "next/image";
+import MaxWidthWrapper from "../max-width-wrapper";
 
 const Topbar = () => {
   return (
-    <div className="flex items-center justify-between gap-3 sm:gap-0">
+    <MaxWidthWrapper className="flex items-center justify-between gap-3 sm:gap-0">
       <Image
         src={"/assets/logo.svg"}
         alt="Logo"
@@ -32,7 +33,7 @@ const Topbar = () => {
       >
         Advertise
       </Button>
-    </div>
+    </MaxWidthWrapper>
   );
 };
 

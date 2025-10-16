@@ -1,23 +1,23 @@
-import React from 'react'
-import PriceMarquee from './price-marquee'
-import MaxWidthWrapper from '../max-width-wrapper'
-import Topbar from './topbar'
-import Navigation from './navigation'
-import LanguageSelector from './language-selector'
+import React from "react";
+import PriceMarquee from "./price-marquee";
+import Topbar from "./topbar";
+import Navigation from "./navigation";
+import LanguageSelector from "./language-selector";
+import MaxWidthWrapper from "../max-width-wrapper";
 
 const Header = () => {
   return (
-    <header className='py-3'>
-      <MaxWidthWrapper className='flex flex-col gap-5'>
-        <Topbar />
-        <div className='flex items-center justify-between'>
+    <header className="pt-3 shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
+      <Topbar />
+      <div className="hidden lg:block border-b py-3">
+        <MaxWidthWrapper className="flex items-center justify-between ">
           <Navigation />
           <LanguageSelector />
-        </div>
-        <PriceMarquee />
-      </MaxWidthWrapper>
+        </MaxWidthWrapper>
+      </div>
+      <PriceMarquee />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
