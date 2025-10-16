@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import ClientOnly from "@/components/client-only";
+import { ReactQueryProvider } from "@/components/react-query-provider";
 
 const geistSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -9,8 +11,7 @@ const geistSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Crypto Blog - Blockchain | Cryptocurrency News Media | Crypto Guide",
+  title: "Crypto Blog - Blockchain | Cryptocurrency News Media | Crypto Guide",
   description:
     "Crypto Blog is an online media publication that helps to educate readers about crypto news, exchanges, and markets in the crypto and blockchain industry",
 };
@@ -23,8 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable}`}>
       <body className={`font-sans antialiased`}>
-        <Header />
-        {children}
+        <ClientOnly>
+          <ReactQueryProvider>
+            <Header />
+            {children}
+          </ReactQueryProvider>
+        </ClientOnly>
       </body>
     </html>
   );
