@@ -65,7 +65,7 @@ LEFT JOIN wpkj_usermeta um ON um.user_id = u.ID AND um.meta_key = 'description'
 WHERE p.post_type = 'post' 
   AND p.post_parent = 0
 ORDER BY p.post_date_gmt DESC
-LIMIT 50;
+LIMIT 500;
     `);
 
     return NextResponse.json(rows);

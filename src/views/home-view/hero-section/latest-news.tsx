@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/section-header";
+import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 import { Post } from "@/types";
@@ -59,6 +60,12 @@ const LatestNews = ({ posts }: LatestNewsProps) => {
           </ScrollArea>
         </div>
       </div>
+      <Button
+        variant="outline"
+        className="w-full mt-4 text-[#7F7F7F] border-[#7F7F7F] hover:cursor-pointer"
+      >
+        View all
+      </Button>
     </div>
   );
 };
