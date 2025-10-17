@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import ClientOnly from "@/components/client-only";
 import { ReactQueryProvider } from "@/components/react-query-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
 
 const geistSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
             >
               <Header />
               <main className="py-10">{children}</main>
+              <Footer />
             </ThemeProvider>
           </ReactQueryProvider>
         </ClientOnly>
