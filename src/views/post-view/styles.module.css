@@ -1,0 +1,497 @@
+@reference "../../app/globals.css";
+
+/* index styles */
+
+.pageContainer {
+  @apply min-h-screen bg-background text-foreground;
+}
+
+.pageGrid {
+   @apply mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-[auto_4fr_1.5fr] gap-8 mt-5;
+}
+
+/* Main blog area */
+.mainBlog {
+  @apply flex flex-col space-y-10;
+  
+}
+.socialBarWrapper {
+  @apply hidden lg:block ;
+}
+
+.socialSticky {
+  @apply sticky top-32;
+}
+
+.sectionSpacing {
+  @apply space-y-6;
+}
+
+/* Sidebar */
+
+.sidebar {
+  @apply flex flex-col space-y-6;
+}
+
+/* Footer spacing */
+.footerSpacing {
+  @apply h-20;
+}
+
+/* Separator for post content */
+.separatorCustom {
+  @apply bg-[#00000069];
+}
+/* Author */
+
+/* AuthorBio section */
+.authorBioSection {
+  @apply w-full bg-[#BFE3F840] p-6;
+}
+
+.authorBioWrapper {
+  @apply mx-auto w-full;
+}
+
+.authorBioFlex {
+  @apply flex flex-col md:flex-row items-start md:items-center gap-4;
+}
+
+/* Avatar */
+.authorAvatarWrapper {
+  @apply shrink-0 transition-transform duration-300 hover:scale-105;
+}
+.authorAvatar {
+  @apply h-[5.6875rem] w-[5.6875rem] ring-2 ring-[#d9d9d9];
+}
+.authorAvatarFallback {
+  @apply text-3xl font-semibold bg-[#a0cde7] text-black;
+}
+
+/* Text content */
+.authorText {
+  @apply flex-1 flex flex-col gap-2;
+}
+
+.authorNameRow {
+  @apply flex flex-wrap items-center gap-3;
+}
+
+.authorName {
+  @apply text-xl font-medium leading-tight tracking-tight text-[#030303];
+}
+
+.authorReadMore {
+  @apply inline-flex items-center gap-2 font-sans text-xs font-medium 
+         bg-gradient-to-r from-[#AADDF3] via-[#09C7C5] to-[#00527E] 
+         bg-clip-text text-transparent;
+}
+
+.authorReadMoreIcon {
+  @apply text-[#00527E] text-xs transition-transform duration-200 ;
+}
+
+/* Bio text */
+.authorBioText {
+  @apply text-sm leading-snug text-[#0000008C] font-normal;
+}
+
+/* Breadcrumbs */
+
+/* Container wrapper */
+.breadcrumbContainer {
+  @apply w-full bg-white;
+}
+
+/* Breadcrumb list */
+.breadcrumbList {
+  @apply flex items-center gap-2 text-xs font-medium text-gray-600;
+}
+
+/* Links inside breadcrumb */
+.breadcrumbLink {
+  @apply transition-colors text-gray-600 hover:text-black;
+  text-decoration: none;
+}
+
+/* Breadcrumb logo */
+.breadcrumbLogo {
+  @apply relative w-5 h-5;
+}
+
+/* Breadcrumb separator */
+.breadcrumbSeparator {
+  @apply text-gray-400;
+}
+
+/* Current page / category */
+.breadcrumbPage {
+  @apply text-black font-semibold;
+}
+
+/* Banner Sidebar */
+
+.bannerSidebarWrapper {
+  @apply space-y-6 top-20;
+}
+
+.bannerAdContainer {
+  @apply bg-muted rounded-2xl p-4 shadow-md text-center;
+}
+
+.bannerAdText {
+  @apply text-sm font-semibold;
+}
+
+.bannerAdImage {
+  @apply mt-3 aspect-[3/4] bg-gray-200 rounded-xl;
+}
+
+
+/* Post Header */
+
+/* Main article wrapper */
+.postHeaderWrapper {
+  @apply w-full flex flex-col gap-6 relative;
+}
+
+/* Header section */
+.postHeaderTitleWrapper {
+  @apply flex flex-col gap-3;
+}
+
+.postHeaderTitle {
+  @apply text-4xl font-semibold tracking-[0.02rem] text-black;
+}
+
+.postHeaderDescription {
+  @apply text-base text-black/80 font-medium;
+}
+
+/* Author + Meta */
+.postMetaWrapper {
+  @apply flex items-start sm:items-center gap-[0.88rem] flex-wrap;
+}
+
+/* Avatar */
+.postAvatar {
+  @apply h-11 w-11 shrink-0 ring-1 ring-black/10;
+}
+
+/* Author info + timestamps */
+.authorInfoWrapper {
+  @apply flex flex-col flex-1 gap-1;
+}
+
+.authorNameReadTime {
+  @apply flex justify-between items-center text-xs text-[#00547b];
+}
+
+.readTime {
+  @apply text-black/50 text-xs;
+}
+
+.timestampsWrapper {
+  @apply flex justify-between text-[0.625rem] text-black/70;
+}
+
+.timestampItem {
+  @apply flex gap-1;
+}
+
+.timestampLabel {
+  @apply text-black/50;
+}
+
+.timestampValue {
+  @apply font-normal text-black;
+}
+
+/* Post tags  */
+
+/* Main wrapper */
+.postTagsWrapper {
+  @apply w-full;
+}
+
+/* Title */
+.postTagsTitle {
+  @apply text-lg font-medium mb-4 text-black;
+}
+
+/* Tags container */
+.tagsContainer {
+  @apply flex flex-wrap gap-3;
+}
+
+/* Individual tag */
+.tagItem {
+  @apply bg-transparent text-[#00000080] border border-[#00000080] 
+         px-3 py-1 rounded-[6.25rem] text-sm cursor-pointer;
+}
+
+/*Socials*/
+
+/* Wrapper */
+.socialsWrapper {
+  @apply space-y-[0.88rem];
+}
+
+/* Section title */
+.socialsTitle {
+  @apply text-xs font-normal text-center;
+}
+
+/* Social buttons container */
+.socialButtonsWrapper {
+  @apply flex justify-start;
+}
+
+/* Social buttons column */
+.socialButtonsColumn {
+  @apply flex flex-col p-[0.75rem] space-y-4 border border-[#03030333];
+}
+
+/* Divider bar */
+.socialDivider {
+  @apply w-[0.5625rem] h-[2.3125rem] bg-primary;
+}
+
+/* Individual button size */
+.socialButton {
+  @apply size-6;
+}
+
+/* Icon inside button */
+.socialIcon {
+  @apply w-6 h-6;
+}
+
+/* Subscriber */
+
+/* Main wrapper */
+.subscriberWrapper {
+  @apply relative w-full flex flex-col items-start bg-[#f5faff] p-6 overflow-hidden gap-6 border border-border;
+}
+
+/* Heading section */
+.subscriberHeading {
+  @apply flex-1 flex flex-col gap-3 w-full;
+}
+
+.subscriberTitle {
+  @apply text-3xl md:text-4xl font-bold tracking-tight text-black;
+}
+
+.subscriberDescription {
+  @apply text-gray-700 text-base md:text-lg;
+}
+
+/* Form */
+.subscriberForm {
+  @apply flex flex-col sm:flex-row w-full gap-3 items-stretch z-10;
+}
+
+/* Input wrapper */
+.inputWrapper {
+  @apply flex-1 flex flex-col h-full;
+}
+
+.inputField {
+  @apply h-full p-4 rounded-none;
+}
+
+/* Error message */
+.inputError {
+  @apply text-red-500 text-sm mt-1;
+}
+
+/* Submit button */
+.submitButton {
+  @apply bg-black text-white hover:bg-black/90 p-3 text-base rounded-none font-normal cursor-pointer;
+}
+
+/* Blurred background */
+.blurredBackground {
+  @apply absolute w-[12rem] h-[15rem] rounded-full opacity-80 bg-primary/40 blur-[48px] z-0;
+}
+
+/*Thumbnail*/
+
+/* Main wrapper */
+.thumbnailWrapper {
+  @apply flex flex-col border border-border overflow-hidden p-3;
+}
+
+/* Image container */
+.thumbnailImageWrapper {
+  @apply relative w-full h-60 md:h-80 lg:h-96;
+}
+
+/* Image itself */
+.thumbnailImage {
+  @apply object-cover w-full h-full rounded-xl;
+}
+
+/* Stats container */
+.thumbnailStats {
+  @apply flex items-center gap-4 text-sm p-[0.75rem] pb-0 text-[#000000B2];
+}
+
+/* Individual stat item */
+.thumbnailStatItem {
+  @apply flex items-center gap-1;
+}
+
+/* Icon inside stat */
+.thumbnailStatIcon {
+  @apply text-lg;
+}
+
+/* Trending News */
+
+/* Main section wrapper */
+.trendingNewsWrapper {
+  @apply w-full border border-cyan-400/25 bg-black text-[#FFFFFFCC];
+}
+
+/* Inner padding wrapper */
+.trendingNewsInner {
+  @apply p-4;
+}
+
+/* Header */
+.trendingNewsHeader {
+  @apply text-left;
+}
+
+.trendingNewsTitle {
+  @apply text-2xl font-bold text-cyan-400 tracking-tight;
+}
+
+.trendingNewsDivider {
+  @apply mt-3 h-[3px] w-3/4 rounded-full bg-cyan-400;
+}
+
+/* Headlines list */
+.trendingNewsList {
+  @apply mt-4;
+}
+
+/* Individual headline */
+.trendingNewsItemLink {
+  @apply block text-[0.825rem] font-medium leading-snug transition-all duration-200 
+         hover:text-cyan-400 hover:translate-x-1 uppercase;
+}
+
+/* Separator */
+.trendingNewsSeparator {
+  @apply my-[0.59rem] bg-cyan-400/25;
+}
+
+/*Check Also */
+
+.checkAlsoWrapper {
+  @apply w-full flex flex-col gap-4;
+}
+
+.checkAlsoCard {
+  @apply rounded-md border border-border overflow-hidden;
+}
+
+.checkAlsoHeader {
+  @apply flex justify-between items-center p-4;
+}
+
+.checkAlsoHeaderText {
+  @apply text-sm font-medium text-[#555];
+}
+
+.checkAlsoCloseIcon {
+  @apply w-4 h-4 text-gray-500 cursor-pointer hover:text-gray-700;
+}
+
+.checkAlsoSeparator {
+  @apply mx-4;
+}
+
+.checkAlsoContent {
+  @apply flex flex-col gap-3 p-4;
+}
+
+.checkAlsoImageWrapper {
+  @apply relative h-48 w-full rounded-md overflow-hidden;
+}
+
+.checkAlsoTitle {
+  @apply text-base font-semibold;
+}
+
+.checkAlsoFooter {
+  @apply px-4 py-2;
+}
+
+.checkAlsoFooterRow {
+  @apply flex flex-wrap items-center justify-between w-full text-xs text-[#222]/70;
+}
+
+.checkAlsoFooterLeft {
+  @apply flex items-center gap-1;
+}
+
+.checkAlsoFooterRight {
+  @apply flex items-center gap-2 mt-2 sm:mt-0;
+}
+
+
+/* Recommendation Card */
+
+.recommendedWrapper {
+  @apply mx-auto;
+}
+
+.recommendedHeader {
+  @apply flex justify-start items-start sm:items-center mb-8;
+}
+
+.newsGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10;
+}
+
+.newsCard {
+  @apply rounded-none overflow-hidden border border-border gap-0 p-[0.88rem];
+}
+
+.newsCardHeader {
+  @apply p-0 gap-0;
+}
+
+.newsImageWrapper {
+  @apply relative h-48 w-full;
+}
+
+.newsCardContent {
+  @apply px-0 pb-0 gap-0;
+}
+
+.newsTitle {
+  @apply text-base font-semibold;
+}
+
+.newsCardFooter {
+  @apply px-0 gap-0;
+}
+
+.newsFooterRow {
+  @apply flex flex-wrap items-center justify-between w-full text-xs text-[#222222]/70;
+}
+
+.newsFooterLeft {
+  @apply flex items-center gap-1;
+}
+
+.newsFooterRight {
+  @apply flex items-center gap-2 mt-2 sm:mt-0;
+}
+
+
