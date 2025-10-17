@@ -4,17 +4,20 @@ import { Search } from "lucide-react";
 import SideMenu from "./side-menu";
 import Image from "next/image";
 import MaxWidthWrapper from "../max-width-wrapper";
+import Link from "next/link";
 
 const Topbar = () => {
   return (
     <MaxWidthWrapper className="flex items-center justify-between gap-3 sm:gap-0">
-      <Image
-        src={"/assets/logo.svg"}
-        alt="Logo"
-        width={250}
-        height={42}
-        className="w-64 h-8 order-1 sm:order-2"
-      />
+      <Link href={"/"} className="order-1 sm:order-2">
+        <Image
+          src={"/assets/logo.svg"}
+          alt="Logo"
+          width={250}
+          height={42}
+          className="w-64 h-8"
+        />
+      </Link>
 
       <div className="flex items-center gap-2 lg:gap-3 order-2 sm:order-1">
         <Button
