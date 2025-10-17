@@ -2,6 +2,9 @@ import MaxWidthWrapper from "@/components/max-width-wrapper";
 import React from "react";
 import HeroSection from "./hero-section";
 import EditorsChoice from "./editors-choice";
+import NewsCategory from "./news-category";
+import TrendingNews from "./trending-news";
+import { Interview } from "./interview";
 import Image from "next/image";
 
 function HomeView() {
@@ -19,6 +22,15 @@ function HomeView() {
       </MaxWidthWrapper>
       <MaxWidthWrapper>
         <EditorsChoice />
+      </MaxWidthWrapper>
+      <MaxWidthWrapper>
+        <NewsCategory />
+      </MaxWidthWrapper>
+      <MaxWidthWrapper>
+        <TrendingNews />
+      </MaxWidthWrapper>
+      <MaxWidthWrapper>
+        <Interview />
       </MaxWidthWrapper>
     </div>
   );
