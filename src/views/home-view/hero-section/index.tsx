@@ -13,7 +13,7 @@ const HeroSection = async () => {
   const latestNews = posts.slice(5);
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-4 w-full items-stretch">
+    <section className="grid grid-cols-1 lg:grid-cols-[1.2fr_2fr_.75fr] gap-4 w-full items-stretch">
       <LatestNews posts={latestNews} />
       <PinnedArticles posts={pinnedArticles} />
       <div className="w-full">

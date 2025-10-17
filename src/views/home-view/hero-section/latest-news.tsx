@@ -17,7 +17,7 @@ const LatestNews = ({ posts }: LatestNewsProps) => {
       <div className="bg-transparent">
         <div className="flex flex-col relative">
           <div className="absolute left-[6px] top-[16px] bottom-[16px] w-[2px] bg-gray-200" />
-          <ScrollArea className="h-[46rem] pr-">
+          <ScrollArea className="h-[50rem] pr-0">
             <div className="flex flex-col space-y-6">
               {posts?.map((post, index) => {
                 return (
@@ -53,10 +53,7 @@ const LatestNews = ({ posts }: LatestNewsProps) => {
                 );
               })}
             </div>
-            <ScrollBar
-              orientation="vertical"
-              className="w-1.5 bg-[#00000012] rounded-full"
-            />
+            <ScrollBar orientation="vertical" />
           </ScrollArea>
         </div>
       </div>
