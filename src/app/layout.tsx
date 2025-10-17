@@ -34,7 +34,7 @@ export default function RootLayout({
               disableTransitionOnChange
             >
               <Header />
-              {children}
+              <main className="py-10">{children}</main>
             </ThemeProvider>
           </ReactQueryProvider>
         </ClientOnly>

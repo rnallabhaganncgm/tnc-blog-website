@@ -4,11 +4,11 @@ import HeroSection from "./hero-section";
 
 function HomeView() {
   return (
-    <main className="py-10">
+    <>
       <MaxWidthWrapper>
         <HeroSection />
       </MaxWidthWrapper>
-    </main>
+    </>
   );
 }
 
