@@ -27,6 +27,7 @@ export async function GET(req: Request, { params }: Params) {
       SELECT
         p.ID,
         p.post_title,
+        p.post_content,
         p.post_name AS slug,
         p.post_date,
         p.post_excerpt,
