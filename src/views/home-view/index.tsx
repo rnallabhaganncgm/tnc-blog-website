@@ -4,15 +4,12 @@ import HeroSection from "./hero-section";
 import EditorsChoice from "./editors-choice";
 import NewsCategory from "./news-category";
 import TrendingNews from "./trending-news";
-import { Interview } from "./interview";
 import Image from "next/image";
 import PressRelease from "./press-release";
 import PricePrediction from "./price-prediction";
 import TwitterInterface from "./twitter-interface-card";
 import Heatmap from "./heatmap";
 import ExchangeNews from "./exchange-news";
-import TrendingNews from "./trending-news";
-import NewsCategory from "./news-category";
 import UpcomingEvents from "./events";
 import Newsletter from "./news-letter";
 
@@ -34,16 +31,6 @@ function HomeView() {
         <EditorsChoice />
       </MaxWidthWrapper>
       <MaxWidthWrapper>
-<<<<<<< HEAD
-        <NewsCategory />
-      </MaxWidthWrapper>
-      <MaxWidthWrapper>
-        <TrendingNews />
-      </MaxWidthWrapper>
-      <MaxWidthWrapper>
-        <Interview />
-      </MaxWidthWrapper>
-=======
         <PressRelease />
       </MaxWidthWrapper>
       <MaxWidthWrapper>
@@ -93,7 +80,6 @@ function HomeView() {
 
 
 
->>>>>>> 6e8cfc2 (`Updated dependencies and code to reflect changes in package-lock.json and package.json`)
     </div>
   );
 }
