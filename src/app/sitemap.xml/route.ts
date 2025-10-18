@@ -23,6 +23,8 @@ export async function GET() {
       console.warn("⚠️ No published posts found in database");
     }
 
+    // Data from db
+
     const urls = rows
       .map(
         (post) => `
